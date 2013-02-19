@@ -1,6 +1,6 @@
-# Random Heart Generator
+# The Random Heart Generator
 
-I made the Random Heart Generator for Valentine's Day as part of a weekly class I help teach on R and ggplot.
+I made [The Random Heart Generator][RANDOM_HEART_GENERATOR] for Valentine's Day as part of a weekly class I help teach on R and ggplot.
 
 ## Defaults
 
@@ -14,7 +14,7 @@ hearts(n = 5, up = TRUE, free.love = FALSE)
 
 ## Usage
 
-The Random Heart Generator plots five hearts of random size, position, and color (of the rainbow):
+The Random Heart Generator plots five hearts of random size, position, and color (from the [rainbow color palette][COLOR_PALETTE]):
 
 
 ```r
@@ -57,7 +57,7 @@ hearts(n = 150, free.love = TRUE)
 ![plot of chunk lots_of_hearts](figure/lots_of_hearts.png) 
 
 
-Since love can be messy, you can make your plot a bit more chaotic by changing to `up` option:
+Since love can be messy, you can make your plot a bit more chaotic by changing the `up` option:
 
 
 ```r
@@ -66,3 +66,8 @@ hearts(up = FALSE)
 
 ![plot of chunk up+down_hearts](figure/up+down_hearts.png) 
 
+
+<!-- LINKS -->
+
+[COLOR_PALETTE]: http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/palettes.html
+[RANDOM_HEART_GENERATOR]: random_heart_generator.R
