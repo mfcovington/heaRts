@@ -1,0 +1,44 @@
+# Random Heart Generator
+
+I made the Random Heart Generator for Valentine's Day as part of a weekly class I help teach on R and ggplot.
+
+## Defaults
+
+The default parameters of The Random Heart Generator are:
+
+```{r eval = FALSE}
+hearts(n = 5, up = TRUE, free.love = FALSE)
+```
+
+## Usage
+
+The Random Heart Generator plots five hearts of random size, position, and color (of the rainbow):
+
+```{r default_hearts}
+source("random_heart_generator.R")
+hearts()
+```
+
+By changing `n`, you can plot any number of hearts:
+
+```{r ten_hearts}
+hearts(n = 10)
+```
+
+However, if you try to plot too many (100+), you will get a warning to help prevent R from becoming non-responsive:
+
+```{r}
+hearts(n = 150)
+```
+
+This safeguard can be bypassed with the `free.love` option:
+
+```{r lots_of_hearts}
+hearts(n = 150, free.love = TRUE)
+```
+
+Since love can be messy, you can make your plot a bit more chaotic by changing to `up` option:
+
+```{r up+down_hearts}
+hearts(up = FALSE)
+```
